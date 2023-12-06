@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FCAD36AE-1AC9-456B-927F-AD557C463B27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trebuchet.Presentation", "src\Trebuchet.Presentation\Trebuchet.Presentation.csproj", "{03FC45A0-934C-4F71-AA80-6183DA8039F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trebuchet.Mediation", "src\Trebuchet.Mediation\Trebuchet.Mediation.csproj", "{C657F32B-831F-460C-A310-06DC495D4E3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trebuchet.Core", "src\Trebuchet.Core\Trebuchet.Core.csproj", "{E54A3861-580F-4E87-8829-469631FFF4B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trebuchet.Configuration", "src\Trebuchet.Configuration\Trebuchet.Configuration.csproj", "{FD693FA1-0F5D-4440-B7E6-709D7F41CCAB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trebuchet.Decypher", "src\Trebuchet.Decypher\Trebuchet.Decypher.csproj", "{12328C04-39B3-4EC8-8576-1E578045BF48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03FC45A0-934C-4F71-AA80-6183DA8039F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03FC45A0-934C-4F71-AA80-6183DA8039F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03FC45A0-934C-4F71-AA80-6183DA8039F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03FC45A0-934C-4F71-AA80-6183DA8039F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C657F32B-831F-460C-A310-06DC495D4E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C657F32B-831F-460C-A310-06DC495D4E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C657F32B-831F-460C-A310-06DC495D4E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C657F32B-831F-460C-A310-06DC495D4E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E54A3861-580F-4E87-8829-469631FFF4B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E54A3861-580F-4E87-8829-469631FFF4B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E54A3861-580F-4E87-8829-469631FFF4B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E54A3861-580F-4E87-8829-469631FFF4B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD693FA1-0F5D-4440-B7E6-709D7F41CCAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD693FA1-0F5D-4440-B7E6-709D7F41CCAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD693FA1-0F5D-4440-B7E6-709D7F41CCAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD693FA1-0F5D-4440-B7E6-709D7F41CCAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12328C04-39B3-4EC8-8576-1E578045BF48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12328C04-39B3-4EC8-8576-1E578045BF48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12328C04-39B3-4EC8-8576-1E578045BF48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12328C04-39B3-4EC8-8576-1E578045BF48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{03FC45A0-934C-4F71-AA80-6183DA8039F4} = {FCAD36AE-1AC9-456B-927F-AD557C463B27}
+		{C657F32B-831F-460C-A310-06DC495D4E3B} = {FCAD36AE-1AC9-456B-927F-AD557C463B27}
+		{E54A3861-580F-4E87-8829-469631FFF4B6} = {FCAD36AE-1AC9-456B-927F-AD557C463B27}
+		{FD693FA1-0F5D-4440-B7E6-709D7F41CCAB} = {FCAD36AE-1AC9-456B-927F-AD557C463B27}
+		{12328C04-39B3-4EC8-8576-1E578045BF48} = {FCAD36AE-1AC9-456B-927F-AD557C463B27}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91C09008-5782-42E6-825A-027C411E1C14}
+	EndGlobalSection
+EndGlobal
