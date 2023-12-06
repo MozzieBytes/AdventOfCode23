@@ -11,9 +11,4 @@
     <PackageReference Include="Scrutor" Version="4.2.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Trebuchet.Core\Trebuchet.Core.csproj" />
-    <ProjectReference Include="..\Trebuchet.Sanitize\Trebuchet.Sanitize.csproj" />
-  </ItemGroup>
-
 </Project>

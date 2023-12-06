@@ -2,6 +2,7 @@ using Trebuchet.Presentation;
 using Trebuchet.Mediation;
 using Trebuchet.Configuration;
 using Trebuchet.Decypher;
+using Trebuchet.Sanitize;
 
 internal class Program
 {
@@ -10,6 +11,7 @@ internal class Program
         var builder = Host.CreateApplicationBuilder(args);
         builder.Services
             .AddConfigurationServices(builder.Configuration)
+            .AddSanitizationServices()
             .AddDecypherServices()
             .AddMediators()
             .AddHostedService<CalibrationWorker>();

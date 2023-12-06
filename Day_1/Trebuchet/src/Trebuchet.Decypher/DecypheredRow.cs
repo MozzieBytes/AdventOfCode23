@@ -1,5 +1,5 @@
 ﻿namespace Trebuchet.Decypher;
-internal struct DecypheredRow(int value)
+internal readonly struct DecypheredRow(int value)
 {
     public int Value => value;
 }
