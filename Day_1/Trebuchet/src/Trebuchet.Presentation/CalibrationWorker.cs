@@ -17,7 +17,7 @@ public class CalibrationWorker : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        var result = await _calibrationMediator.CalibrateTrebuchet();
+        var result = await _calibrationMediator.CalibrateTrebuchet(stoppingToken);
 
         _logger.LogInformation($"{nameof(CalibrationWorker)} - Finished calibration: {result.Value}");
     }

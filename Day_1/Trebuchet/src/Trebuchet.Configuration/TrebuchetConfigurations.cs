@@ -17,9 +17,9 @@ internal class TrebuchetConfigurations : ITrebuchetConfigurations
         _trebuchetOptions = trebuchetOptions.Value;
     }
 
-    public async Task<TrebuchetConfiguration> LoadConfiguration()
+    public async Task<TrebuchetConfiguration> LoadConfiguration(CancellationToken cancellationToken = default)
     {
-        var fileContents = await _fileSystem.File.ReadAllLinesAsync(_trebuchetOptions.ConfigurationFilePath);
+        var fileContents = await _fileSystem.File.ReadAllLinesAsync(_trebuchetOptions.ConfigurationFilePath, cancellationToken);
 
         return new TrebuchetConfiguration(fileContents);
     }

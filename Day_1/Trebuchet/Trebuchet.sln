@@ -17,6 +17,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Trebuchet.Decypher", "src\T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trebuchet.Sanitize", "src\Trebuchet.Sanitize\Trebuchet.Sanitize.csproj", "{6D700E94-8BB5-4297-B691-92B2F8CA18FE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A0B72B74-10E7-4896-AFEB-9ED094F09867}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trebuchet.Tests", "tests\Trebuchet.Tests\Trebuchet.Tests.csproj", "{246D7541-074B-42B6-A8FD-4E49A3D2304E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +51,10 @@ Global
 		{6D700E94-8BB5-4297-B691-92B2F8CA18FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D700E94-8BB5-4297-B691-92B2F8CA18FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D700E94-8BB5-4297-B691-92B2F8CA18FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{246D7541-074B-42B6-A8FD-4E49A3D2304E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{246D7541-074B-42B6-A8FD-4E49A3D2304E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{246D7541-074B-42B6-A8FD-4E49A3D2304E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{246D7541-074B-42B6-A8FD-4E49A3D2304E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,6 +66,7 @@ Global
 		{FD693FA1-0F5D-4440-B7E6-709D7F41CCAB} = {FCAD36AE-1AC9-456B-927F-AD557C463B27}
 		{12328C04-39B3-4EC8-8576-1E578045BF48} = {FCAD36AE-1AC9-456B-927F-AD557C463B27}
 		{6D700E94-8BB5-4297-B691-92B2F8CA18FE} = {FCAD36AE-1AC9-456B-927F-AD557C463B27}
+		{246D7541-074B-42B6-A8FD-4E49A3D2304E} = {A0B72B74-10E7-4896-AFEB-9ED094F09867}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {91C09008-5782-42E6-825A-027C411E1C14}

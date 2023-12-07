@@ -17,9 +17,9 @@ internal class CalibrationMediator : ICalibrationMediator
         _configurationDecypher = configurationDecypher;
     }
 
-    public async Task<CalibrationResult> CalibrateTrebuchet()
+    public async Task<CalibrationResult> CalibrateTrebuchet(CancellationToken cancellationToken = default)
     {
-        var configuration = await _trebuchetConfigurations.LoadConfiguration();
+        var configuration = await _trebuchetConfigurations.LoadConfiguration(cancellationToken);
         return _configurationDecypher.DecypherConfiguration(configuration);
     }
 }

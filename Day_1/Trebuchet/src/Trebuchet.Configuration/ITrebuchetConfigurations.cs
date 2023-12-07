@@ -4,5 +4,5 @@ namespace Trebuchet.Configuration;
 
 public interface ITrebuchetConfigurations
 {
-    Task<TrebuchetConfiguration> LoadConfiguration();
+    Task<TrebuchetConfiguration> LoadConfiguration(CancellationToken cancellationToken = default);
 }

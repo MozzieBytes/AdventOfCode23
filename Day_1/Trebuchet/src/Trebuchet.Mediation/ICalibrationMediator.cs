@@ -3,5 +3,5 @@
 namespace Trebuchet.Mediation;
 public interface ICalibrationMediator
 {
-    Task<CalibrationResult> CalibrateTrebuchet();
+    Task<CalibrationResult> CalibrateTrebuchet(CancellationToken cancellation = default);
 }
