@@ -10,6 +10,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="appsettings.testing.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.testing.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="6.12.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
@@ -34,6 +44,12 @@
     <ProjectReference Include="..\..\src\Trebuchet.Decypher\Trebuchet.Decypher.csproj" />
     <ProjectReference Include="..\..\src\Trebuchet.Mediation\Trebuchet.Mediation.csproj" />
     <ProjectReference Include="..\..\src\Trebuchet.Sanitize\Trebuchet.Sanitize.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="CalibrationTests.cs">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Compile>
   </ItemGroup>
 
 </Project>

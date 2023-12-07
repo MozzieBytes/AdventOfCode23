@@ -35,7 +35,7 @@ public class CalibrationTests
 
         var result = await sut.CalibrateTrebuchet(CancellationToken.None);
 
-        result.Should().Be(expectedResult);
+        result.Value.Should().Be(expectedResult);
     }
 
     [Theory]
@@ -45,9 +45,9 @@ public class CalibrationTests
         var serviceProvider = TestServiceProvider.ServiceProvider;
 
         var file = Substitute.For<IFile>();
-        var fileSystem = serviceProvider.GetRequiredService<IFileSystem>();
+        var filesystem = serviceProvider.GetRequiredService<IFileSystem>();
         var options = serviceProvider.GetRequiredService<IOptions<TrebuchetOptions>>().Value;
-        fileSystem.File.Returns(file);
+        filesystem.File.Returns(file);
         file
             .ReadAllLinesAsync(options.ConfigurationFilePath, CancellationToken.None)
             .Returns(Task.FromResult(input));
@@ -56,6 +56,6 @@ public class CalibrationTests
 
         var result = await sut.CalibrateTrebuchet(CancellationToken.None);
 
-        result.Should().Be(expectedResult);
+        result.Value.Should().Be(expectedResult);
     }
 }
